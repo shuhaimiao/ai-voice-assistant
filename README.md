@@ -1,5 +1,9 @@
 # AI Voice Assistant
 
+## Project Goal
+
+This AI Voice Assistant aims to automate podcast generation workflows using locally hosted LLMs and voice cloning capabilities while maintaining production-quality output. See [Problem Statement](docs/problem_statement.md) for details.
+
 ## Requirements
 
 - Python 3.12
