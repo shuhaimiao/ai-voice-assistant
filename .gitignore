@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Audio output files from demo scripts
+*.wav
+
 # C extensions
 *.so
 
