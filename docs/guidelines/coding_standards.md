@@ -46,7 +46,20 @@
 
 ## Version Control
 
-1. **Branching Strategy**:
+1. **Commit Messages**:
+   - Follow Conventional Commits specification (https://www.conventionalcommits.org)
+   - Always wrap commit messages in double quotes (e.g., git commit -m "feat(tts): add new voice model support")
+   - Format: type(scope): description
+     - type: feat, fix, docs, style, refactor, test, chore, etc.
+     - scope: optional module/component affected
+     - description: concise imperative statement
+   - Body (optional): provide detailed explanation when needed
+   - Footer (optional): reference issues (e.g., Fixes #123)
+   - Use imperative mood ("Add feature" not "Added feature")
+   - Keep commits atomic (one logical change per commit)
+   - Follow 50/72 rule (50 chars for subject, 72 chars per line in body)
+
+2. **Branching Strategy**:
    - Use feature branches
    - Keep commits small and focused
    - Write meaningful commit messages (use double quotes for message text)

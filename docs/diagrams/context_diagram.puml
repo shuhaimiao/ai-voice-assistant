@@ -1,0 +1,21 @@
+@startuml
+title AI Voice Assistant - Context Diagram
+
+actor User
+package "AI Voice Assistant" {
+  [Text-to-Speech System]
+  [Voice Cloning System]
+  [LLM Integration]
+  [RAG System]
+}
+
+User --> [Text-to-Speech System] : Provides text input
+[Text-to-Speech System] --> User : Returns audio output
+User --> [Voice Cloning System] : Provides voice samples
+[Voice Cloning System] --> User : Returns cloned voice model
+User --> [LLM Integration] : Provides queries
+[LLM Integration] --> User : Returns responses
+[LLM Integration] --> [RAG System] : Queries knowledge base
+[RAG System] --> [LLM Integration] : Provides context
+
+@enduml

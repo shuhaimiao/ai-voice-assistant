@@ -1,0 +1,26 @@
+@startuml
+title AI Voice Assistant - Container Diagram
+
+package "AI Voice Assistant" {
+  [Web Interface] as web
+  [API Server] as api
+  [TTS Service] as tts
+  [Voice Cloning Service] as vc
+  [LLM Service] as llm
+  [VectorDB] as vdb #LightGreen
+  [RAG Service] as rag #LightBlue
+  [File Storage] as fs
+}
+
+web --> api : HTTP Requests
+api --> tts : Text Processing
+api --> vc : Voice Samples
+api --> llm : Queries
+api --> rag : Search Requests
+tts --> fs : Store Audio Files
+vc --> fs : Store Voice Models
+llm --> vdb : Store/Query Embeddings
+rag --> vdb : Vector Search
+rag --> llm : Augmented Context
+
+@enduml
