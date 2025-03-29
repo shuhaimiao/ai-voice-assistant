@@ -49,7 +49,7 @@
 1. **Branching Strategy**:
    - Use feature branches
    - Keep commits small and focused
-   - Write meaningful commit messages
+   - Write meaningful commit messages (use double quotes for message text)
 
 2. **Code Reviews**:
    - Review all changes before merging
